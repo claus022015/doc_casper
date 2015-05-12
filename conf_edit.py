@@ -9,6 +9,9 @@
 #sys.path.insert(0, os.path.abspath('.'))
 
 from datetime import date
+import sys
+import os
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 # -- General configuration -----------------------------------------------------
 
