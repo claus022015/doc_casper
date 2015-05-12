@@ -9,7 +9,9 @@
 #sys.path.insert(0, os.path.abspath('.'))
 
 from datetime import date
-import ablog
+import sys
+import os
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 # -- General configuration -----------------------------------------------------
 
@@ -31,7 +33,6 @@ extensions = [
               'sphinxcontrib.napoleon',
               'sphinxcontrib.bibtex',
               'sphinxcontrib.httpdomain',
-              'ablog',
               'sphinxcontrib.images',
               'sphinxcontrib.jsdemo',
              ]
